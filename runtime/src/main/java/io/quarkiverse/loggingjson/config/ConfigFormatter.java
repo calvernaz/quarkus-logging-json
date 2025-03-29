@@ -1,5 +1,7 @@
 package io.quarkiverse.loggingjson.config;
 
+import io.smallrye.config.WithDefault;
+
 public interface ConfigFormatter {
 
     /**
@@ -7,5 +9,8 @@ public interface ConfigFormatter {
      *
      * @return true if the formatter is enabled, false otherwise
      */
-    boolean isEnabled();
+    @WithDefault("false")
+    default boolean isEnabled() {
+        return false;
+    }
 }

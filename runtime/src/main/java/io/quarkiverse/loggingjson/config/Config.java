@@ -37,6 +37,7 @@ public interface Config {
     /**
      * Enable "pretty printing" of the JSON record. Note that some JSON parsers will fail to read pretty printed output.
      */
+    @WithDefault("false")
     boolean prettyPrint();
 
     /**

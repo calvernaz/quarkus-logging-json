@@ -14,7 +14,7 @@ Quarkus logging extension outputting the logging in json.
 
 # Configuration
 The extension is enabled by default for console, when added to the project.
-Console logging can be disabled using configuration: `quarkus.log.json.console.enable=false`
+Console logging can be disabled using configuration: `quarkus.log.json.console.enabled=false`
 
 To see additional configuration options take a look at [Config](https://quarkiverse.github.io/quarkiverse-docs/quarkus-logging-json/dev/index.html)
 

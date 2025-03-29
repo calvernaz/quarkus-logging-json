@@ -10,4 +10,9 @@ public interface ConfigFile extends ConfigFormatter {
      */
     @WithDefault("false")
     boolean enabled();
+
+    @WithDefault("false")
+    default boolean isEnabled() {
+        return enabled();
+    }
 }

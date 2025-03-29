@@ -10,4 +10,9 @@ public interface ConfigConsole extends ConfigFormatter {
      */
     @WithDefault("true")
     boolean enabled();
+
+    @WithDefault("false")
+    default boolean isEnabled() {
+        return enabled();
+    }
 }
