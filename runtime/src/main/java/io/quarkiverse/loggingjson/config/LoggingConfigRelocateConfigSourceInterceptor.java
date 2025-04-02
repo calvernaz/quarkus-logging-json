@@ -1,11 +1,12 @@
 package io.quarkiverse.loggingjson.config;
 
-import io.smallrye.config.ConfigSourceInterceptorContext;
-import io.smallrye.config.RelocateConfigSourceInterceptor;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
+
+import io.smallrye.config.ConfigSourceInterceptorContext;
+import io.smallrye.config.RelocateConfigSourceInterceptor;
 
 public class LoggingConfigRelocateConfigSourceInterceptor extends RelocateConfigSourceInterceptor {
 
